@@ -1,0 +1,23 @@
+{
+  "name": "udemy",
+  "version": "1.0.0",
+  "description": "Learning node.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mitstandel/learning-nodejs.git"
+  },
+  "author": "Mitesh Tandel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mitstandel/learning-nodejs/issues"
+  },
+  "homepage": "https://github.com/mitstandel/learning-nodejs#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
