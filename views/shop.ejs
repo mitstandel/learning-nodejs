@@ -1,0 +1,34 @@
+<%- include('includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/product.css">
+</head>
+<body>
+    <%- include('includes/navigation.ejs') %>
+
+    <main>
+        <h1>My Products</h1>
+        <p>List of all products...</p>
+        <% if (prods.length > 0) { %>
+            <div class="grid">
+                <% for (let product of prods) { %>
+                    <article class="card product-item"> 
+                        <header class="card__header">
+                            <h1 class="product__title"><%= product.title %></h1>
+                        </header>
+                        <div class="card__image">
+                            <img src="https://fra.indiaobservatory.org.in/Themes/default/images/fra.jpg" />
+                        </div>
+                        <div class="card__content">
+                            <h2 class="product_price">$19.99</h2>
+                            <p class="product_description">A very good book</p>
+                        </div>
+                        <div class="card__actions">
+                            <button class="btn">Add to Cart</button>
+                        </div>
+                    </article>
+                <% } %>
+            </div>
+        <% } else { %>
+        <h2>No products</h2>
+        <% } %>
+    </main>
+<%- include('includes/end.ejs') %>
